@@ -840,7 +840,7 @@ form.search button:hover{
     border-radius: var(--percent50);
     line-height: 1;
     background-color: var(--white-color);
-    opacity: .5;
+    opacity: 0;
     transition: var(--trans-background-color), opacity .3s;
 }
 
