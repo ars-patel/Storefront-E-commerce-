@@ -118,7 +118,7 @@ dptButton.addEventListener('click', function(){
 var productThumb = new Swiper('.small-image', {
     loop: true,
     spaceBetween: 10,
-    slidesPerView: 3, // Number of thumbnails visible
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
@@ -132,13 +132,13 @@ var productThumb = new Swiper('.small-image', {
 // Initialize the main slider
 var productBig = new Swiper('.big-image', {
     loop: true,
-    autoHeight: true, // Adjust height automatically
+    autoHeight: true, 
     navigation: {
-        nextEl: '.swiper-button-next', // Add navigation buttons if needed
+        nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     thumbs: {
-        swiper: productThumb, // Link the thumbnails slider
+        swiper: productThumb, 
     },
 });
 
@@ -175,16 +175,15 @@ window.onload = function () {
     const site = document.querySelector('.site');
     const modalClose = document.querySelector('.modalclose');
 
-    // Ensure elements exist before applying actions
     if (site) {
-        site.classList.add('showmodal'); // Always show modal on load
+        site.classList.add('showmodal');
     }
 
     if (modalClose) {
         modalClose.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent unwanted navigation
+            event.preventDefault();
             if (site) {
-                site.classList.remove('showmodal'); // Hide modal on close
+                site.classList.remove('showmodal'); 
             }
         });
     }
